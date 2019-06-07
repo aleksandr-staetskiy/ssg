@@ -1,0 +1,22 @@
+.button {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: $color-secondary;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: .2s ease;
+
+  &:hover {
+    background-color: #fff;
+    color: $color-secondary;
+  }
+
+  &--margin-bottom {
+    margin-bottom: 65px;
+  }
+
+}

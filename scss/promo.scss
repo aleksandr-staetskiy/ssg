@@ -1,0 +1,30 @@
+.promo {
+  &__item {
+
+    &--bg-1 {
+      background: linear-gradient(to right, rgba(228, 232, 230, 0.4), rgba(14, 80, 137, 0.961)), url(../img/promo-bg-1-compressor.jpeg)no-repeat;
+      background-size: cover;
+    }
+
+    &--bg-2 {
+      background: linear-gradient(to right, rgba(228, 232, 230, 0.4), rgba(14, 80, 137, 0.961)), url(../img/promo-bg-2.jpeg)no-repeat;
+      background-size: cover;
+    }
+
+    &--bg-3 {
+      background: linear-gradient(to right, rgba(228, 232, 230, 0.4), rgba(14, 80, 137, 0.961)), url(../img/promo-bg-3.jpg)no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__title {
+    margin-top: 90px;
+    font-size: 29px;
+    font-weight: bold;
+  }
+
+  &__descr {
+    font-size: 18px;
+  }
+
+}

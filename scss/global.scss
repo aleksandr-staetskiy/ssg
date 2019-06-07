@@ -36,3 +36,24 @@ a {
   }
 }
 
+.promo-nav {
+  .owl-prev {
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    border: none;
+    font-size: 70px;
+    background: none;
+    color: rgba(242, 241, 240, 0.907);
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 35%;
+    right: 3%;
+    border: none;
+    font-size: 70px;
+    background: none;
+    color: rgba(242, 241, 240, 0.907);
+  }
+}
