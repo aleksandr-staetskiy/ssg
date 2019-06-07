@@ -1,0 +1,42 @@
+.header {
+  background: $color-primary;
+
+  &__contacts {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+  }
+
+  &__email {
+    margin-left: 15px;
+  }
+
+  &__phone {
+    margin-left: 15px;
+  }
+  
+  &__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn {
+    font-size: 14px;
+    height: auto;
+    border-radius: 20px;
+    background: $color-primary;
+    color: $color-font;
+    padding: 10px;
+    transition: 0.4s ease;
+    border: 1px solid #fff;
+
+
+    &:hover {
+      background: #fff;
+      color: $color-primary;
+  }
+  }
+}

@@ -1,0 +1,15 @@
+.navbar {
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+  }
+}

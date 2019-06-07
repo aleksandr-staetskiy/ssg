@@ -1,0 +1,38 @@
+body {
+  color: $color-font;
+  font-size: $text-size;
+  font-family: 'Roboto Condensed Regular';
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: $color-font;
+
+  &:hover {
+    color: rgb(242, 242, 242);
+  }
+}
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+
+
+  &__icon {
+    width: 100px;
+    height: 60px;
+  }
+
+  &__info {
+    font-size: 14px;
+    margin: 0;
+    margin-left: 15px;
+  }
+}
+
