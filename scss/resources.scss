@@ -1,0 +1,43 @@
+.resources {
+  color: $title-color;
+
+  &__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: 58px;
+  }
+
+  &__unit {
+    position: relative;
+    text-align: center;
+  }
+
+  &__photo-frame {
+    width: 160px;
+    height: 220px;
+    border: 5px solid #005eb5;
+    margin: 0 auto 20px;
+  }
+
+  &__avatar {
+    position: absolute;
+    width: 176px;
+    height: 176px;
+    margin: 17px -65px;
+
+    &--different-size {
+      display: block;
+      width: 176px!important;
+      height: 176px;
+      margin: 17px -15px;
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+}

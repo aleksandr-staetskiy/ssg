@@ -1,0 +1,64 @@
+.discount {
+
+
+  &__item {
+
+    &--bg-1 {
+      background: url(../img/akcia/1.jpg)no-repeat;
+      background-size: cover;
+    }
+
+    &--bg-2 {
+      background: url(../img/akcia/2.jpg)no-repeat;
+      background-size: cover;
+    }
+
+    &--bg-3 {
+      background: url(../img/akcia/3.jpg)no-repeat;
+      background-size: cover;
+    }
+
+    &--bg-4 {
+      background: url(../img/akcia/4.jpg)no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__title {
+    margin-top: 50px;
+    font-size: 39px;
+    font-weight: bold;
+  }
+
+  &__price {
+    font-size: 30px;
+    &-new {
+      background: $color-secondary;
+      margin-left: 10px;
+    }
+  }
+
+  &__list {
+    padding-left: 12px;
+    margin-top: 20px;
+  }
+
+  &__footnote {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+
+  // &-panel {
+  //   position: absolute;
+  //   right: 15%;
+  //   top: 30%;
+  //   width: 380px;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+
+  // &-btn {
+  //   width: 50%;
+  // }
+}

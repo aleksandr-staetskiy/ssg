@@ -1,0 +1,57 @@
+.stage {
+  margin-top: 30px;
+
+  &__unit {
+  width: 100%;
+  max-width: 1015px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 22px rgba(0, 94, 181, 0.127604);
+  padding: 55px 60px;
+  margin: 10px auto;
+  background-image: url(../img/russia.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  }
+
+  &__title {
+    color: $title-color;
+    font-size: 34px;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    color: $color-primary;
+    font-size: 21px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    &-block {
+      text-align: center;
+      font-size: 18px;
+      color: #202f4f;
+      width: 200px;
+    }
+  }
+
+  &__before-price {
+    color: $title-color;
+    margin-bottom: 0;
+  }
+
+  &__price {
+    color: $color-secondary;
+    font-size: 29px;
+  }
+
+  &__subinfo {
+    margin-top: 15px;
+    font-size: 21px;
+    font-weight: bold;
+    color: $title-color;
+  }
+}

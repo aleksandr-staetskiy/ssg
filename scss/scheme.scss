@@ -1,0 +1,214 @@
+.b9 {
+  padding: 60px 0 50px;
+  background-color: #005eb5;
+	background-image: url(../img/b16.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b9 .circles-block {
+  width: 650px;
+  max-width: 100%;
+  position: relative;
+  min-height: 456px;
+}
+.b9 .circles-block .circle-1 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 255px;
+}
+.b9 .circles-block .circle-1 .circle-in {
+  width: 144px;
+  height: 144px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+.b9 .circles-block .circle-1 .circle-in:after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  top: -75px;
+  left: 106px;
+  background-image: url(../img/b9-arrow-1.svg);
+}
+.b9 .circles-block .circle-1 .circle-in img {
+  height: 98px;
+  margin: auto;
+}
+.b9 .circles-block .circle-1 .text-block {
+  margin: 20px 0 0;
+  text-align: left;
+}
+.b9 .circles-block .circle-1 .text-block .title {
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin: 0 0 10px;
+}
+.b9 .circles-block .circle-1 .text-block .text {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.b9 .circles-block .circle-2 {
+  position: absolute;
+  top: 0;
+  left: 195px;
+  width: 450px;
+  display: flex;
+}
+.b9 .circles-block .circle-2 .circle-in {
+  width: 144px;
+  height: 144px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+.b9 .circles-block .circle-2 .circle-in:after {
+  content: '';
+  position: absolute;
+  width: 85px;
+  height: 114px;
+  top: 111px;
+  left: 146px;
+  background-repeat: no-repeat;
+  background-image: url(../img/b9-arrow-3.svg);
+}
+.b9 .circles-block .circle-2 .circle-in img {
+  height: 83px;
+  margin: auto;
+}
+.b9 .circles-block .circle-2 .text-block {
+  margin: auto 0 auto 25px;
+  text-align: left;
+}
+.b9 .circles-block .circle-2 .text-block .title {
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin: 0 0 10px;
+}
+.b9 .circles-block .circle-2 .text-block .text {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.b9 .circles-block .circle-3 {
+  position: absolute;
+  top: 200px;
+  left: 415px;
+  width: 240px;
+}
+.b9 .circles-block .circle-3 .circle-in {
+  width: 144px;
+  height: 144px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+.b9 .circles-block .circle-3 .circle-in:after {
+  content: '';
+  position: absolute;
+  width: 195px;
+  height: 106px;
+  top: -20px;
+  left: -238px;
+  background-repeat: no-repeat;
+  background-image: url(../img/b9-arrow-2.svg);
+}
+.b9 .circles-block .circle-3 .circle-in img {
+  height: 87px;
+  margin: auto;
+}
+.b9 .circles-block .circle-3 .text-block {
+  margin: 20px 0 0;
+  text-align: left;
+}
+.b9 .circles-block .circle-3 .text-block .title {
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin: 0 0 10px;
+}
+.b9 .circles-block .circle-3 .text-block .text {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.b9 .circles-block .circle-4 {
+  position: absolute;
+  top: 200px;
+  left: 795px;
+  width: 345px;
+}
+.b9 .circles-block .circle-4 .circle-in {
+  width: 144px;
+  height: 144px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  background-color: #ffffff;
+  position: relative;
+}
+.b9 .circles-block .circle-4 .circle-in:after {
+  content: '';
+  position: absolute;
+  width: 195px;
+  height: 106px;
+  top: -20px;
+  left: -219px;
+  background-repeat: no-repeat;
+  background-image: url(../img/b9-arrow-4.svg);
+}
+.b9 .circles-block .circle-4 .circle-in img {
+  height: 110px;
+  margin: auto;
+}
+.b9 .circles-block .circle-4 .text-block {
+  margin: 20px 0 0;
+  text-align: left;
+}
+.b9 .circles-block .circle-4 .text-block .title {
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin: 0 0 10px;
+}
+.b9 .circles-block .circle-4 .text-block .text {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0;
+}
+.b9 .title-block {
+  width: calc(100% - 650px);
+}
+.b9 .title-block h2 {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: right;
+  margin: 25px 0;
+}
