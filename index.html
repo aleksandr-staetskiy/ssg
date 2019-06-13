@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/simplebox.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -52,10 +53,6 @@
       </div>
     </div>
   </header>
-  <input type="search" placeholder="Lorem">
-  <button data-search="next">&darr;</button>
-  <button data-search="prev">&uarr;</button>
-  <button data-search="clear">✖</button>
   <div class="app-wrapper">
     <section class="promo">
       <div class="owl-carousel owl-theme" id="promo-slider">
@@ -474,39 +471,282 @@
           </div>
         </div>
     </section>
-    <!-- <div class="cost">
+    <div class="cost">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
-            <p class="cost__title">Заполните ниже форму и мы свяжемся с вами в течение 10 минут, а если сейчас ночь – то в
-              начале следующего рабочего дня</p>
+        <div class="row justify-content-between">
+          <div class="col-lg-6">
+            <p class="cost__title">ХОТИТЕ УЗНАТЬ ТОЧНУЮ СТОИМОСТЬ ВАШИХ РАБОТ?</p>
             <p class="cost__descr">Заполните ниже форму и мы свяжемся с вами в течение 10 минут, а если сейчас ночь – то в начале следующего рабочего дня</p>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-4">
             <form action="#" method="post" class="price-form">
-              <input type="tel" name="phone" required="required" placeholder="Телефон для уточнения деталей *">
-              <input type="text" name="email" placeholder="Ваш email" required="required">
-              <input type="text" name="name" placeholder="Пожалуйста, представьтесь" required="required">
-              <input type="text" name="question" placeholder="Ваш запрос" required="required">
-              <button type="submit" class="button">узнать стоимость</button>
+              <input class="form__input" type="tel" name="phone" required="required" placeholder="Телефон для уточнения деталей *">
+              <input class="form__input" type="text" name="email" placeholder="Ваш email" required="required">
+              <input class="form__input" type="text" name="name" placeholder="Пожалуйста, представьтесь" required="required">
+              <input class="form__input" type="text" name="question" placeholder="Ваш запрос" required="required">
+              <button class="button cost__form" type="submit" class="button">узнать стоимость</button>
             </form>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+    <div class="feedback">
+      <div class="container">
+        <p class="feedback__title">отзывы о нас</p>
+        <div class="owl-carousel owl-theme" id="feedback-slider">
+          <div class="feedback__unit">
+            <img src="img/otz-1-large.jpg" alt="" class="feedback__img resizable">
+          </div>
+          <div class="feedback__unit">
+            <img src="img/otz-2-large.jpg" alt="" class="feedback__img resizable">
+          </div>
+          <div class="feedback__unit">
+            <img src="img/otz-3-large.jpg" alt="" class="feedback__img resizable">
+          </div>
+          <div class="feedback__unit">
+            <img src="img/otz-4-large.jpg" alt="" class="feedback__img resizable">
+          </div>
+          <div class="feedback__unit">
+            <img src="img/otz-5-large.jpg" alt="" class="feedback__img resizable">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comments">
+      <div class="container">
+        <div class="owl-carousel owl-theme" id="comments-carousel">
+          <div class="comments__unit">
+            <div class="comments__inner">
+                <div class="commets__text">
+                    <p>Выражаю благодарность Глебу Владимировичу. 
+                      Задачи были не простые,но все сделано 
+                      качественно и достаточно быстро. Спасибо!</p>
+                  </div>
+            </div>
+            <p class="comments__data">25.04.2019 07:55</p>
+            <p class="comments__name">Андрей Александрович</p>
+          </div>
 
+          <div class="comments__unit">
+            <div class="comments__inner">
+              <div class="commets__text">
+                <p>Рекомендую Глеба Владимировича! Поставил участок
+                  на кадастровый учет за 5 дней, учитывая что предыдущие
+                  2 инженера поставили "крест" на нем, из-за сложности.</p>
+              </div>
+            </div>
+            <p class="comments__data">22.08.2016 10:41</p>
+            <p class="comments__name">Антон</p>
+          </div>
 
+          <div class="comments__unit">
+           <div class="comments__inner">
+              <div class="commets__text">
+                  <p>Отличный кадастровый инженер! Сотрудничаем 
+                    с ним уже несколько лет - не подводил: работы 
+                    выполняет быстро и качественно.</p>
+                </div>
+           </div>
+           <p class="comments__data">03.09.2017 16:57</p>
+                <p class="comments__name">Артём Александрович</p>
+          </div>
 
+          <div class="comments__unit">
+            <div class="comments__inner">
+                <div class="commets__text">
+                    <p>Отличная работа, в сложное время - в феврале 2019 взялись за
+                      постановку на учёт дома. Всё было сделано чётко и в срок.
+                      Цены за услуги вполне адекватные. Рекомендую, специалисты своего дела.</p>
+                  </div>
+            </div>
+            <p class="comments__data">22.04.2019 21:46</p>
+            <p class="comments__name">Олег</p>
+          </div>
 
+          <div class="comments__unit">
+            <div class="comments__inner">
+              <div class="commets__text">
+                <p>Мнгновенно откликнулся и очень качественно провел межевание.
+                  Глеб Владимирович профессионал высочайшего уровня. Рекомендую всем.</p>
+              </div>
+            </div>
+            <p class="comments__data">18.04.2019 10:05</p>
+            <p class="comments__name">Игорь Анатольевич</p>
+          </div>
 
+          <div class="comments__unit">
+            <div class="comments__inner">
+              <div class="commets__text">
+                <p>Глеб Владимирович и его команда это отличные ребята.
+                  Обратились по постановке дома на кадастровой учет.
+                  Когда возникли сложности с документами они эту проблему решили,
+                  нас постоянно держали в курсе. Спасибо команде профессионалов.</p>
+              </div>
+            </div>
+            <p class="comments__data">14.04.2019 17:59</p>
+            <p class="comments__name">Владимир и Алла</p>
+          </div>
 
+          <div class="comments__unit">
+            <div class="comments__inner">
+              <div class="commets__text">
+                <p>Работа по постановке дома на кадастровый учет
+                  была проведена быстро, качественно и на высоком
+                  профессиональном уровне. Рекомендую обращаться к
+                  Кадникову ГВ, надежному и грамотному специалисту.</p>
+              </div>
+            </div>
+            <p class="comments__data">24.03.2019 09:48</p>
+            <p class="comments__name">Шубина Татьяна</p>
+          </div>
 
+          <div class="comments__unit">
+            <div class="comments__inner">
+                <div class="commets__text">
+                    <p>Рекомендую Глеба Кадникова! Был проблемный 
+                      случай с участком, но все завершилось в итоге удачно. 
+                      Выражаю ему свою благодарность! Всегда был на связи и 
+                      всегда был готов ответить на все вопросы. Цены самые адекватные.</p>
+                  </div>
+            </div>
+            <p class="comments__data">26.02.2019 20:36</p>
+                  <p class="comments__name">Дина</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="approach">
+      <div class="container">
+        <h4 class="approach__general-title">наш подход</h4>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6 d-flex">
+                <div class="approach__icon-wrap">
+                  <img src="img/b16-1.svg" alt="icon" class="approach__icon">
+                </div>
+                <div class="approach__info-block">
+                  <p class="approach__secondary-title">Бесплатная консультация</p>
+                  <p class="approach__text">Бесплатная консультациия кадастрового эксперта
+                    по интересующим Вас вопросам</p>
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex">
+                <div class="approach__icon-wrap">
+                  <img src="img/b16-2.svg" alt="icon" class="approach__icon">
+                </div>
+                <div class="approach__info-block">
+                  <p class="approach__secondary-title">Бесплатная консультация</p>
+                  <p class="approach__text">Бесплатная консультациия кадастрового эксперта
+                    по интересующим Вас вопросам</p>
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex">
+                <div class="approach__icon-wrap">
+                  <img src="img/b16-3.svg" alt="icon" class="approach__icon">
+                </div>
+                <div class="approach__info-block">
+                  <p class="approach__secondary-title">Бесплатная консультация</p>
+                  <p class="approach__text">Бесплатная консультациия кадастрового эксперта
+                    по интересующим Вас вопросам</p>
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex">
+                <div class="approach__icon-wrap">
+                  <img src="img/b16-4.svg" alt="icon" class="approach__icon">
+                </div>
+                <div class="approach__info-block">
+                  <p class="approach__secondary-title">Бесплатная консультация</p>
+                  <p class="approach__text">Бесплатная консультациия кадастрового эксперта
+                    по интересующим Вас вопросам</p>
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex">
+                <div class="approach__icon-wrap">
+                  <img src="img/b16-5.svg" alt="icon" class="approach__icon">
+                </div>
+                <div class="approach__info-block">
+                  <p class="approach__secondary-title">Бесплатная консультация</p>
+                  <p class="approach__text">Бесплатная консультациия кадастрового эксперта
+                    по интересующим Вас вопросам</p>
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex">
+                <div class="approach__icon-wrap">
+                  <img src="img/b16-6.svg" alt="icon" class="approach__icon">
+                </div>
+                <div class="approach__info-block">
+                  <p class="approach__secondary-title">Бесплатная консультация</p>
+                  <p class="approach__text">Бесплатная консультациия кадастрового эксперта
+                    по интересующим Вас вопросам</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <a href="https://www.youtube.com/watch?v=LjclYcdh5dY">
+              <div class="approach__video">
+                <span class="approach__play"></span>
+                <p class="approach__video-text">СМОТРИТЕ ВИДЕО <br> О НАШЕЙ КОМПАНИИ</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="certificates">
+      <h6 class="certificates__title">НАШИ СЕРТИФИКАТЫ</h6>
+      <div class="container">
+        <div class="owl-carousel owl-theme" id="certificates-carousel">
+          <div class="certificates__unit">
+            <img src="img/serf-1-large.jpg" alt="" class="certificates__img resizable">
+          </div>
+          <div class="certificates__unit">
+            <img src="img/serf-2-large.jpg" alt="" class="certificates__img resizable">
+          </div>
+          <div class="certificates__unit">
+            <img src="img/serf-3-large.jpg" alt="" class="certificates__img resizable">
+          </div>
+          <div class="certificates__unit">
+            <img src="img/serf-4-large.jpg" alt="" class="certificates__img resizable">
+          </div>
+          <div class="certificates__unit">
+            <img src="img/serf-5-large.jpg" alt="" class="certificates__img resizable">
+          </div>
+          <div class="certificates__unit">
+            <img src="img/serf-6-large.jpg" alt="" class="certificates__img resizable">
+          </div>
+          <div class="certificates__unit">
+            <img src="img/serf-7-large.jpg" alt="" class="certificates__img resizable">
+          </div>
+          <div class="certificates__unit">
+            <img src="img/serf-7-large.jpg" alt="" class="certificates__img resizable">
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p class="footer__confidencial">
+              © 2019 ССГ Все права защищены
+            </p>
+            <input type="search" placeholder="Lorem">
+            <button data-search="next">&darr;</button>
+            <button data-search="prev">&uarr;</button>
+            <button data-search="clear">✖</button>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
   </div>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="js/simplebox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
   <script src="js/script.js"></script>
 </body>

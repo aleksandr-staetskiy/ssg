@@ -1,0 +1,16 @@
+.certificates {
+
+  &__title {
+    color: $title-color;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    height: 230px;
+    width: 100px;
+  }
+}

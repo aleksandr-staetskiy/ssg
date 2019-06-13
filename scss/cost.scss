@@ -3,4 +3,14 @@
   background-image: url(../img/b11.jpg);
   background-size: cover;
   background-position: top center;
+
+  &__title {
+    font-size: 39px;
+    font-weight: bold;
+    margin-top: 100px;
+  }
+
+  &__descr {
+    font-size: 18px;
+  }
 }

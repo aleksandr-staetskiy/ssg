@@ -42,6 +42,35 @@ $(document).ready(function(){
     navContainerClass: 'stage-nav',
   });
 
+  $("#feedback-slider").owlCarousel({
+    items: 4,
+    loop: true,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    navContainerClass: 'stage-nav',
+  });
+
+  $("#comments-carousel").owlCarousel({
+    items: 3,
+    loop: true,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 9000,
+    navContainerClass: 'stage-nav',
+  });
+
+  $("#certificates-carousel").owlCarousel({
+    items: 4,
+    loop: true,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 9000,
+    navContainerClass: 'stage-nav',
+  });
+
+  // resizebale init
+  $(".resizable").simplebox();
 });
 
 $(function() {
