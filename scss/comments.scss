@@ -3,6 +3,7 @@
   color: $title-color;
   
   &__inner {
+    height: 250px;
     background-image: url(../img/reviews-bg.png);
     background-repeat: no-repeat;
     padding: 62px 52px 62px;
@@ -20,5 +21,10 @@
     font-weight: bold;
     margin: 0;
     padding: 0;
+  }
+
+  &__info {
+    margin-top: -25px;
+    margin-left: 60px;
   }
 }

@@ -212,3 +212,55 @@
   text-align: right;
   margin: 25px 0;
 }
+
+
+
+@media screen and (max-width: 1024px) {
+  
+  .b9 .row {flex-direction: column-reverse;}
+  .b9 .title-block {width:100%;}
+  .b9 .title-block h2 {text-align: center; margin: 0 0 50px;}
+  .b9 .circles-block {
+      min-height: 900px;
+      margin: 0 auto;
+  }
+  .b9 .circles-block .circle-4 {
+      top: 593px;
+      left: 200px;
+  }
+  .b9 .circles-block .circle-4 .circle-in:after {
+      transform: rotate(125deg);
+      top: -139px;
+      left: 98px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .b9 .circles-block {width: 300px;}
+  .b9 .circles-block .circle-1 {width: 140px; top: 160px;}
+  .b9 .circles-block .circle-1 .circle-in {width: 100px; height: 100px; margin: 0 auto;}
+  .b9 .circles-block .circle-1 .circle-in:after {left: 75px;}
+  .b9 .circles-block .circle-1 .circle-in img {height: 60px;}
+  .b9 .circles-block .circle-2 {display: block; width: 120px; top: 0px; right: 0; left: auto;}
+  .b9 .circles-block .circle-2 .circle-in {width: 100px; height: 100px; margin: 0 auto;}
+  .b9 .circles-block .circle-2 .circle-in:after {top: 275px; left: 10px; transform: rotate(41deg);}
+  .b9 .circles-block .circle-2 .circle-in img {height: 60px;}
+  .b9 .circles-block .circle-3 {width: 120px; top: 420px; right: 0; left: auto;}
+  .b9 .circles-block .circle-3 .circle-in {width: 100px; height: 100px; margin: 0 auto;}
+  .b9 .circles-block .circle-3 .circle-in:after {width: 130px; height: 103px; background-position: 100%; top: -52px; left: -143px; transform: rotate(35deg);}
+  .b9 .circles-block .circle-3 .circle-in img {height: 60px;}
+  .b9 .circles-block .circle-4 {width: 280px; left: 10px; top: 690px;}
+  .b9 .circles-block .circle-4 .circle-in {margin: 0 auto;}
+  .b9 .circles-block .circle-4 .circle-in:after {width: 90px; background-position: 100% 0%; top: -90px; left: 108px;}
+  
+  .b9 .circles-block .text-block {margin: 20px 0 0 !important;}
+  .b9 .circles-block .text-block .title {font-size: 20px !important; line-height: 22px !important; text-align: center !important;}
+  .b9 .circles-block .text-block .text {font-size: 15px !important; line-height: 17px !important; text-align: center !important;}
+  .b9 .title-block h2 {font-size: 33px;}
+  
+}
+
+
+
+

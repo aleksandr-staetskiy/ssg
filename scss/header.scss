@@ -39,4 +39,14 @@
       color: $color-primary;
   }
   }
+
+  @media (max-width: 778px) {
+    &__contacts {
+      display: none;
+    }
+
+    &__menu{
+      display: none;
+    }
+  }
 }

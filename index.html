@@ -32,19 +32,19 @@
             </a>
             <p class="logo__info">Полный спектр кадастровых <br> и геодезических работ</p>
           </div>
-          <nav class="navbar">
-            <ul class="navbar__list">
-              <li class="navbar__item">
-                <a href="" class="navbar__link">услуги</a>
+          <nav class="main-navbar">
+            <ul class="main-navbar__list">
+              <li class="main-navbar__item">
+                <a href="page-uslugi.html" class="navbar__link">услуги</a>
               </li>
-              <li class="navbar__item">
-                <a href="" class="navbar__link">О нас</a>
+              <li class="main-navbar__item">
+                <a href="" class="main-navbar__link">О нас</a>
               </li>
-              <li class="navbar__item">
-                <a href="" class="navbar__link">Отзывы</a>
+              <li class="main-navbar__item">
+                <a href="" class="main-navbar__link">Отзывы</a>
               </li>
-              <li class="navbar__item">
-                <a href="" class="navbar__link">Контакты</a>
+              <li class="main-navbar__item">
+                <a href="" class="main-navbar__link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -53,6 +53,48 @@
       </div>
     </div>
   </header>
+  <!--Navbar-->
+<nav class="navbar navbar-dark  indigo darken-2">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">
+    <img src="img/logo.svg" alt="ссг" class="logo__icon">
+  </a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22"
+    aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="animated-icon3"><span></span><span></span><span></span></div>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent22">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="page-uslugi.html">Услуги</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">О Нас</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Отзывы</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Контакты</a>
+      </li>
+    </ul>
+    <!-- Links -->
+
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
   <div class="app-wrapper">
     <section class="promo">
       <div class="owl-carousel owl-theme" id="promo-slider">
@@ -68,7 +110,7 @@
                     доступные цены, гарантия безошибочного результата. Под ключ с регистрацией
                     в росреестре, заявка в онлайн-режиме. Без выходных.</p>
                 </div>
-                <button class="button button--margin-bottom">
+                <button class="button button--margin-bottom" data-toggle="modal" data-target=".bd-example-modal-lg">
                   <span class="button__text">Заказать звонок</span>
                 </button>
               </div>
@@ -87,7 +129,7 @@
                     доступные цены, гарантия безошибочного результата. Под ключ с регистрацией
                     в росреестре, заявка в онлайн-режиме. Без выходных.</p>
                 </div>
-                <button class="button button--margin-bottom">
+                <button class="button button--margin-bottom" data-toggle="modal" data-target=".bd-example-modal-lg">
                   <span class="button__text">Заказать звонок</span>
                 </button>
               </div>
@@ -105,7 +147,7 @@
                     доступные цены, гарантия безошибочного результата. Под ключ с регистрацией
                     в росреестре, заявка в онлайн-режиме. Без выходных.</p>
                 </div>
-                <button class="button button--margin-bottom">
+                <button class="button button--margin-bottom" data-toggle="modal" data-target=".bd-example-modal-lg">
                   <span class="button__text">Заказать звонок</span>
                 </button>
               </div>
@@ -117,11 +159,11 @@
     <section class="offer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">
             <h2 class="offer__title">наши услуги</h2>
             <p class="offer__subtitle">В Санкт-Петербурге и Ленинградской области</p>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-3">
             <div class="offer__visible">
               <img src="img/b2-3.svg" alt="icon" class="offer__icon">
               <div class="offer__text">
@@ -133,11 +175,11 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-3">
             <div class="offer__visible">
               <img src="img/b2-4.svg" alt="icon" class="offer__icon">
               <div class="offer__text">
-                <p>Межевание / раздел / объединение земельных участков</p>
+                <p>Технические планы на здания / сооружения / помещения</p>
               </div>
             </div>
             <div class="offer__hidden">
@@ -145,11 +187,11 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-3">
             <div class="offer__visible">
               <img src="img/b2-1.svg" alt="icon" class="offer__icon">
               <div class="offer__text">
-                <p>Межевание / раздел / объединение земельных участков</p>
+                <p>Регистрация прав собственности</p>
               </div>
             </div>
             <div class="offer__hidden">
@@ -157,33 +199,33 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-3">
             <div class="offer__visible">
               <img src="img/b2-2.svg" alt="icon" class="offer__icon">
               <div class="offer__text">
-                <p>Межевание / раздел / объединение земельных участков</p>
+                <p>Топографическая / ландшафтная съемка</p>
               </div>
             </div>
             <div class="offer__hidden">
               <button class="button offer__button">Заказать звонок</button>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-3">
             <div class="offer__visible">
               <img src="img/b2-5.svg" alt="icon" class="offer__icon">
               <div class="offer__text">
-                <p>Межевание / раздел / объединение земельных участков</p>
+                <p>Вынос границ земельных участков</p>
               </div>
             </div>
             <div class="offer__hidden">
               <button class="button offer__button">Заказать звонок</button>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-3">
             <div class="offer__visible">
               <img src="img/b2-6.svg" alt="icon" class="offer__icon">
               <div class="offer__text">
-                <p>Межевание / раздел / объединение земельных участков</p>
+                <p>Геодезические разбивочные работы</p>
               </div>
             </div>
             <div class="offer__hidden">
@@ -517,16 +559,18 @@
         <div class="owl-carousel owl-theme" id="comments-carousel">
           <div class="comments__unit">
             <div class="comments__inner">
-                <div class="commets__text">
-                    <p>Выражаю благодарность Глебу Владимировичу. 
-                      Задачи были не простые,но все сделано 
-                      качественно и достаточно быстро. Спасибо!</p>
-                  </div>
+              <div class="commets__text">
+                <p>Выражаю благодарность Глебу Владимировичу.
+                  Задачи были не простые,но все сделано
+                  качественно и достаточно быстро. Спасибо!</p>
+              </div>
             </div>
-            <p class="comments__data">25.04.2019 07:55</p>
-            <p class="comments__name">Андрей Александрович</p>
+            <div class="comments__info">
+                <p class="comments__data">25.04.2019 07:55</p>
+                <p class="comments__name">Андрей Александрович</p>
+            </div>
           </div>
-
+    
           <div class="comments__unit">
             <div class="comments__inner">
               <div class="commets__text">
@@ -535,34 +579,40 @@
                   2 инженера поставили "крест" на нем, из-за сложности.</p>
               </div>
             </div>
-            <p class="comments__data">22.08.2016 10:41</p>
-            <p class="comments__name">Антон</p>
+            <div class="comments__info">
+                <p class="comments__data">22.08.2016 10:41</p>
+                <p class="comments__name">Антон</p>
+            </div>
           </div>
-
-          <div class="comments__unit">
-           <div class="comments__inner">
-              <div class="commets__text">
-                  <p>Отличный кадастровый инженер! Сотрудничаем 
-                    с ним уже несколько лет - не подводил: работы 
-                    выполняет быстро и качественно.</p>
-                </div>
-           </div>
-           <p class="comments__data">03.09.2017 16:57</p>
-                <p class="comments__name">Артём Александрович</p>
-          </div>
-
+    
           <div class="comments__unit">
             <div class="comments__inner">
-                <div class="commets__text">
-                    <p>Отличная работа, в сложное время - в феврале 2019 взялись за
-                      постановку на учёт дома. Всё было сделано чётко и в срок.
-                      Цены за услуги вполне адекватные. Рекомендую, специалисты своего дела.</p>
-                  </div>
+              <div class="commets__text">
+                <p>Отличный кадастровый инженер! Сотрудничаем
+                  с ним уже несколько лет - не подводил: работы
+                  выполняет быстро и качественно.</p>
+              </div>
             </div>
-            <p class="comments__data">22.04.2019 21:46</p>
-            <p class="comments__name">Олег</p>
+            <div class="comments__info">
+                <p class="comments__data">03.09.2017 16:57</p>
+                <p class="comments__name">Артём Александрович</p>
+            </div>
           </div>
-
+    
+          <div class="comments__unit">
+            <div class="comments__inner">
+              <div class="commets__text">
+                <p>Отличная работа, в сложное время - в феврале 2019 взялись за
+                  постановку на учёт дома. Всё было сделано чётко и в срок.
+                  Цены за услуги вполне адекватные. Рекомендую, специалисты своего дела.</p>
+              </div>
+            </div>
+            <div class="comments__info">
+                <p class="comments__data">22.04.2019 21:46</p>
+                <p class="comments__name">Олег</p>
+            </div>
+          </div>
+    
           <div class="comments__unit">
             <div class="comments__inner">
               <div class="commets__text">
@@ -570,23 +620,27 @@
                   Глеб Владимирович профессионал высочайшего уровня. Рекомендую всем.</p>
               </div>
             </div>
-            <p class="comments__data">18.04.2019 10:05</p>
-            <p class="comments__name">Игорь Анатольевич</p>
+            <div class="comments__info">
+                <p class="comments__data">18.04.2019 10:05</p>
+                <p class="comments__name">Игорь Анатольевич</p>
+            </div>
           </div>
-
+    
           <div class="comments__unit">
             <div class="comments__inner">
               <div class="commets__text">
                 <p>Глеб Владимирович и его команда это отличные ребята.
                   Обратились по постановке дома на кадастровой учет.
                   Когда возникли сложности с документами они эту проблему решили,
-                  нас постоянно держали в курсе. Спасибо команде профессионалов.</p>
+                  нас постоянно держали в курсе. </p>
               </div>
             </div>
-            <p class="comments__data">14.04.2019 17:59</p>
-            <p class="comments__name">Владимир и Алла</p>
+            <div class="comments__info">
+                <p class="comments__data">14.04.2019 17:59</p>
+                <p class="comments__name">Владимир и Алла</p>
+            </div>
           </div>
-
+    
           <div class="comments__unit">
             <div class="comments__inner">
               <div class="commets__text">
@@ -596,21 +650,25 @@
                   Кадникову ГВ, надежному и грамотному специалисту.</p>
               </div>
             </div>
-            <p class="comments__data">24.03.2019 09:48</p>
-            <p class="comments__name">Шубина Татьяна</p>
+            <div class="comments__info">
+                <p class="comments__data">24.03.2019 09:48</p>
+                <p class="comments__name">Шубина Татьяна</p>
+            </div>
           </div>
-
+    
           <div class="comments__unit">
             <div class="comments__inner">
-                <div class="commets__text">
-                    <p>Рекомендую Глеба Кадникова! Был проблемный 
-                      случай с участком, но все завершилось в итоге удачно. 
-                      Выражаю ему свою благодарность! Всегда был на связи и 
-                      всегда был готов ответить на все вопросы. Цены самые адекватные.</p>
-                  </div>
+              <div class="commets__text">
+                <p>Рекомендую Глеба Кадникова! Был проблемный
+                  случай с участком, но все завершилось в итоге удачно.
+                  Выражаю ему свою благодарность! Всегда был на связи и
+                  всегда был готов ответить на все вопросы. Цены самые адекватные.</p>
+              </div>
             </div>
-            <p class="comments__data">26.02.2019 20:36</p>
-                  <p class="comments__name">Дина</p>
+            <div class="comments__info">
+                <p class="comments__data">26.02.2019 20:36</p>
+                <p class="comments__name">Дина</p>
+            </div>
           </div>
         </div>
       </div>
@@ -632,13 +690,12 @@
                 </div>
               </div>
               <div class="col-lg-6 d-flex">
-                <div class="approach__icon-wrap">
+                <div class="approach__icon-wrap approach__icon-wrap--resized">
                   <img src="img/b16-2.svg" alt="icon" class="approach__icon">
                 </div>
                 <div class="approach__info-block">
-                  <p class="approach__secondary-title">Бесплатная консультация</p>
-                  <p class="approach__text">Бесплатная консультациия кадастрового эксперта
-                    по интересующим Вас вопросам</p>
+                  <p class="approach__secondary-title">Заключение договора</p>
+                  <p class="approach__text">Заключаем с Вами договор он-лайн или в удобном для Вас месте.</p>
                 </div>
               </div>
               <div class="col-lg-6 d-flex">
@@ -646,9 +703,8 @@
                   <img src="img/b16-3.svg" alt="icon" class="approach__icon">
                 </div>
                 <div class="approach__info-block">
-                  <p class="approach__secondary-title">Бесплатная консультация</p>
-                  <p class="approach__text">Бесплатная консультациия кадастрового эксперта
-                    по интересующим Вас вопросам</p>
+                  <p class="approach__secondary-title">Выезд геодезистов в удобное время</p>
+                  <p class="approach__text">Работаем в том числе по выходным дням. Выезжаем на объект в согласованное с Вами время.</p>
                 </div>
               </div>
               <div class="col-lg-6 d-flex">
@@ -656,9 +712,8 @@
                   <img src="img/b16-4.svg" alt="icon" class="approach__icon">
                 </div>
                 <div class="approach__info-block">
-                  <p class="approach__secondary-title">Бесплатная консультация</p>
-                  <p class="approach__text">Бесплатная консультациия кадастрового эксперта
-                    по интересующим Вас вопросам</p>
+                  <p class="approach__secondary-title">Справедливая цена</p>
+                  <p class="approach__text">Мы работаем без посредников. Имеется свой кадастровый и геодезический отдел.</p>
                 </div>
               </div>
               <div class="col-lg-6 d-flex">
@@ -666,9 +721,8 @@
                   <img src="img/b16-5.svg" alt="icon" class="approach__icon">
                 </div>
                 <div class="approach__info-block">
-                  <p class="approach__secondary-title">Бесплатная консультация</p>
-                  <p class="approach__text">Бесплатная консультациия кадастрового эксперта
-                    по интересующим Вас вопросам</p>
+                  <p class="approach__secondary-title">Схема оплата 50% / 50%</p>
+                  <p class="approach__text">Мы напрямую замотивированны выполнить для Вас работы качественно и в срок.</p>
                 </div>
               </div>
               <div class="col-lg-6 d-flex">
@@ -676,15 +730,14 @@
                   <img src="img/b16-6.svg" alt="icon" class="approach__icon">
                 </div>
                 <div class="approach__info-block">
-                  <p class="approach__secondary-title">Бесплатная консультация</p>
-                  <p class="approach__text">Бесплатная консультациия кадастрового эксперта
-                    по интересующим Вас вопросам</p>
+                  <p class="approach__secondary-title">Гарантия результата</p>
+                  <p class="approach__text">Вы всегда остаетесь в курсе хода реализации проекта и получаете результат работ в соответствии с договором.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
-            <a href="https://www.youtube.com/watch?v=LjclYcdh5dY">
+            <a target="_blank" href="https://www.youtube.com/watch?v=LjclYcdh5dY">
               <div class="approach__video">
                 <span class="approach__play"></span>
                 <p class="approach__video-text">СМОТРИТЕ ВИДЕО <br> О НАШЕЙ КОМПАНИИ</p>
@@ -732,7 +785,7 @@
             <p class="footer__confidencial">
               © 2019 ССГ Все права защищены
             </p>
-            <input type="search" placeholder="Lorem">
+            <input type="search" placeholder="поиск по сайту">
             <button data-search="next">&darr;</button>
             <button data-search="prev">&uarr;</button>
             <button data-search="clear">✖</button>
@@ -741,7 +794,35 @@
       </div>
     </footer>
 
+  </div>
 
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content modal--theme-call">
+          <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <h2 class="modal__title mb-4">Обратная связь</h2>
+          </div>
+          <form action="">
+            <div class="row">
+              <div class="col-lg-6">
+                <input class="form__input" type="tel" name="phone" required="required" placeholder="Телефон для уточнения деталей *">
+                <input class="form__input" type="text" name="email" placeholder="Ваш email" required="required">
+                <input class="form__input" type="text" name="name" placeholder="Пожалуйста, представьтесь" required="required">
+                <input class="form__input" type="text" name="question" placeholder="Ваш запрос" required="required">
+              </div>
+              <div class="col-lg-6">
+                <textarea name="comment" placeholder="Что Вас интересует?"></textarea>
+                <button class="button cost__form mt-3" type="submit" class="button">узнать стоимость</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

@@ -31,4 +31,18 @@
   &__hidden {
     display: none;
   }
+
+  @media (max-width: 420px) {
+    & {
+      padding-top: 0;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle {
+      text-align: center;
+    }
+  }
 }

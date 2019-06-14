@@ -40,4 +40,11 @@
     font-weight: bold;
   }
 
+  @media (max-width: 420px) {
+    &__avatar {
+      margin: 17px -25px;
+      width: 200px!important;
+    }
+  }
+
 }

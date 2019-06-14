@@ -8,6 +8,12 @@ $(document).ready(function(){
     autoplay: true,
     autoplayTimeout: 5000,
     navContainerClass: 'promo-nav',
+    responsive:{
+      320:{
+          nav: false,
+          dots: true
+      },
+  }
   });
 
   $("#discount-slider").owlCarousel({
@@ -28,7 +34,7 @@ $(document).ready(function(){
     items: 1,
     loop: true,
     nav: true,
-    // autoplay: true,
+    autoplay: true,
     autoplayTimeout: 6000,
     navContainerClass: 'stage-nav',
   });
@@ -40,6 +46,17 @@ $(document).ready(function(){
     autoplay: true,
     autoplayTimeout: 6000,
     navContainerClass: 'stage-nav',
+    responsive:{
+      320:{
+        items: 1,
+      },
+      620:{
+        items: 2,
+      },
+      820:{
+        items: 4,
+      },
+  }
   });
 
   $("#feedback-slider").owlCarousel({
@@ -49,6 +66,14 @@ $(document).ready(function(){
     autoplay: true,
     autoplayTimeout: 6000,
     navContainerClass: 'stage-nav',
+    responsive:{
+      320:{
+        items: 2,
+      },
+      820:{
+        items: 4,
+      },
+  }
   });
 
   $("#comments-carousel").owlCarousel({
@@ -57,21 +82,52 @@ $(document).ready(function(){
     nav: true,
     autoplay: true,
     autoplayTimeout: 9000,
-    navContainerClass: 'stage-nav',
+    // navContainerClass: 'stage-nav',
+    responsive:{
+      320:{
+        items: 1,
+      },
+      820:{
+        items: 3,
+        navContainerClass: 'stage-nav',
+      },
+  }
   });
 
   $("#certificates-carousel").owlCarousel({
-    items: 4,
+    items: 4 ,
     loop: true,
     nav: true,
     autoplay: true,
     autoplayTimeout: 9000,
     navContainerClass: 'stage-nav',
+    responsive:{
+      320:{
+        items: 1,
+      },
+      820:{
+        items: 4,
+      },
+  }
   });
 
   // resizebale init
   $(".resizable").simplebox();
 });
+
+  // burger setup
+  $('.first-button').on('click', function () {
+
+    $('.animated-icon1').toggleClass('open');
+  });
+  $('.second-button').on('click', function () {
+
+    $('.animated-icon2').toggleClass('open');
+  });
+  $('.third-button').on('click', function () {
+
+    $('.animated-icon3').toggleClass('open');
+  });
 
 $(function() {
 

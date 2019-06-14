@@ -1,4 +1,4 @@
-.navbar {
+.main-navbar {
   &__list {
     list-style: none;
     display: flex;
@@ -12,4 +12,12 @@
   &__link {
     text-transform: uppercase;
   }
+
+  @media (max-width: 994px) {
+
+    &{
+      display: none;
+    }
+  }
 }
+

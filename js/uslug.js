@@ -18,23 +18,23 @@ $(document).ready(function(){
     /*function change_slide() {$('.b1 .owl-nav .owl-next').click();}
     setInterval(change_slide, 5000);*/
 
-    if(screen.width < 768){
-    	$(document).find('.b15.clients .clients-items').slick({
-			dots: true,
-			infinite: false,
-			arrows: true,
-			rows: 3,
-			slidesPerRow: 1
-		});
-		$(document).find('.new-b3-wrap').slick({
-			dots: true,
-			infinite: true,
-			arrows: true,
-			autoplay: true,
-			autoplaySpeed: 3000,
-			adaptiveHeight: true
-		});
-    }
+    // if(screen.width < 768){
+    // 	$(document).find('.b15.clients .clients-items').slick({
+	// 		dots: true,
+	// 		infinite: false,
+	// 		arrows: true,
+	// 		rows: 3,
+	// 		slidesPerRow: 1
+	// 	});
+	// 	$(document).find('.new-b3-wrap').slick({
+	// 		dots: true,
+	// 		infinite: true,
+	// 		arrows: true,
+	// 		autoplay: true,
+	// 		autoplaySpeed: 3000,
+	// 		adaptiveHeight: true,
+	// 	});
+    // }
 
 	
 	// $("#jquery_jplayer_1").jPlayer({
