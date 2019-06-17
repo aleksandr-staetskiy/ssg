@@ -30,11 +30,37 @@
   }
 
   &__hidden {
+    display: flex;
     visibility: hidden;
   }
 
+  &__button {
+    font-size: 14px;
+    height: auto;
+    padding: 5px;
+  }
+
+  &__schem {
+    display: block;
+    font-size: 18px;
+    color: $color-font--secondary;
+    border-bottom: 1px dashed $color-font--secondary;
+    margin-left: 10px;  
+    &:hover {
+      color: rgba(0, 0, 0, 0.548);
+      text-decoration: none;
+    }
+  }
+
   &__hovered {
+    transition: 0.4s ease;
     padding: 15px;
+    &:hover{
+      box-shadow: 0px 0px 22px rgba(0, 94, 181, 0.127604);
+    }
+    &:hover .offer__hidden {
+      visibility: visible;
+    }
   }
 
   @media (max-width: 420px) {
@@ -48,6 +74,10 @@
 
     &__subtitle {
       text-align: center;
+    }
+
+    &__hovered {
+      padding: 0;
     }
   }
 }

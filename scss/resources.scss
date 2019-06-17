@@ -1,6 +1,7 @@
 .resources {
   color: $title-color;
 
+
   &__title {
     text-align: center;
     font-size: 32px;
@@ -10,8 +11,17 @@
   }
 
   &__unit {
+    cursor: pointer;
     position: relative;
     text-align: center;
+    transition: 1s ease-in;
+    &:hover .resources__photo-frame{
+      border: 5px solid $color-secondary;
+    }
+
+    &:hover .resources__button {
+      visibility: visible;
+    }
   }
 
   &__photo-frame {
@@ -38,6 +48,14 @@
   &__name {
     font-size: 18px;
     font-weight: bold;
+  }
+
+  &__button {
+    visibility: hidden;
+    border-radius: 50px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (max-width: 420px) {

@@ -138,12 +138,16 @@ $(document).ready(function(){
   $(".resizable").simplebox();
 
   // instafeed init
-  var feed = new Instafeed({
-    get: 'tagged',
-    tagName: 'awesome',
-    clientId: 'YOUR_CLIENT_ID'
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '3929927848',
+    limit: 12,
+    resolution: 'standard_resolution',
+    accessToken: 'YOUR ACCESS ID',
+    sortBy: 'most-recent',
+    template: '<div class="col-lg-3 instaimg"><a href="{{image}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
 });
-feed.run();
+    userFeed.run();
 });
 
   // burger setup
