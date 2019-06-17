@@ -2,6 +2,7 @@
   padding: 45px 0px;
   color: $color-font--secondary;
 
+
   &__title {
     color: $title-color;
     font-size: 39px;
@@ -29,7 +30,11 @@
   }
 
   &__hidden {
-    display: none;
+    visibility: hidden;
+  }
+
+  &__hovered {
+    padding: 15px;
   }
 
   @media (max-width: 420px) {
@@ -46,3 +51,4 @@
     }
   }
 }
+

@@ -1,0 +1,27 @@
+.partners {
+  padding-top: 30px;
+  padding-bottom: 45px;
+
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: $title-color;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+
+ &__unit {
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+ }
+
+ &__img-wrap {
+   display: flex;
+   justify-content: center;
+  align-items: center;
+   width: 80px;
+   height: 80px;
+ }
+}

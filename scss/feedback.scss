@@ -1,8 +1,10 @@
 .feedback {
 
   &__unit {
+    cursor: pointer;
     width: 160px;
-    height: 270px;
+    height: 245px;
+    box-shadow: 0px 0px 22px rgba(0, 94, 181, 0.127604);
   }
 
   &__title {

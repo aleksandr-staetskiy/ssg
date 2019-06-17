@@ -1,6 +1,7 @@
 .comments {
   padding: 40px 0px;
   color: $title-color;
+  background: #EBF1F6;
   
   &__inner {
     height: 250px;
@@ -26,5 +27,9 @@
   &__info {
     margin-top: -25px;
     margin-left: 60px;
+  }
+
+  &__sublink {
+    color: $color-primary;
   }
 }

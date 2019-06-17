@@ -1,0 +1,101 @@
+.b13 {
+  padding: 50px 0 0;
+}
+.b13 .about-left {
+  padding: 60px 80px 60px 55px;
+  background-color: #005eb5;
+  text-align: left;
+  margin: 40px 0 0;
+  width: 100%;
+  max-width: 430px;
+  min-height: 375px;
+}
+.b13 .about-left .title {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 0 20px;
+}
+.b13 .about-left .place {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 0 0 20px;
+}
+.b13 .about-left .info {
+  /* font-weight: bold; */
+  font-size: 21px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+.b13 .about-center {
+  width: 507px;
+  background-image: url(../img/men.png);
+  background-position: top center;
+  margin: 0 0 0 -100px;
+}
+.b13 .about-right {
+  width: 285px;
+  text-align: left;
+  margin: auto 0 0 auto;
+  padding: 60px 0 50px;
+}
+.b13 .about-right .bold {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 25px;
+  color: #202f4f;
+  margin: 0 0 20px;
+}
+.b13 .about-right .normal {
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 25px;
+  color: #202f4f;
+  margin: 0 0 20px;
+}
+.b13 .about-right .small {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #202f4f;
+  margin: 0;
+}
+
+@media screen and (min-width: 1300px) {
+  .container {min-width: 1200px;}
+  /*.owl-carousel-7 .owl-nav, .owl-carousel-8 .owl-nav {display: none !important;}*/
+  /*#page {overflow: -webkit-paged-x;}*/
+}
+@media screen and (max-width: 1300px) {
+  /*.owl-carousel-7 .owl-nav, .owl-carousel-8 .owl-nav {display: none !important;}*/
+  /*#page {overflow: -webkit-paged-x;}*/
+  .b2 .services .item .item-in {width: 340px;}
+  .b2 .services .item .item-in .order .modal-dashed {font-size: 14px;}
+  body,html {overflow-x: hidden;}
+  .b16 .row .steps {width: 740px;}
+  .b1 .owl-nav .owl-prev, .b1 .owl-nav .owl-next {right: calc(50% - 570px);}
+}
+@media screen and (max-width: 1024px) {
+  .b13 .about-right {width: 100%;}
+
+}
+@media screen and (max-width: 812px) {
+  .b13 .about-center {width: 50%; background-size: cover; margin: 0 0 0 -10%;}
+}
+
+
+@media screen and (max-width: 480px) {
+  
+  .b13 .row {flex-direction: column-reverse;}
+  .b13 .about-center {display: none;}
+  .b13 .about-left {width: 100%; padding: 40px 0 20px 30px; background-image: url(../img/men.png); background-size: 120%; background-repeat: no-repeat; background-position: -130% -10%; background-size: 101%; background-repeat: no-repeat; background-position: 100px 175%;}
+  .b13 .about-left .info {max-width: 150px;}
+  .b13 .about-right {padding-bottom: 0; padding-top: 25px; margin-left: 15px;}
+}
+

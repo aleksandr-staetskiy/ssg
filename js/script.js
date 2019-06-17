@@ -79,15 +79,16 @@ $(document).ready(function(){
   $("#comments-carousel").owlCarousel({
     items: 3,
     loop: true,
-    nav: true,
     autoplay: true,
     autoplayTimeout: 9000,
     // navContainerClass: 'stage-nav',
     responsive:{
       320:{
         items: 1,
+        nav: false,
       },
       820:{
+        nav: true,
         items: 3,
         navContainerClass: 'stage-nav',
       },
@@ -111,8 +112,38 @@ $(document).ready(function(){
   }
   });
 
+  $("#partners-slider").owlCarousel({
+    items: 4,
+    loop: true,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 7000,
+    navContainerClass: 'stage-nav',
+    responsive:{
+      320:{
+        items: 3,
+        center: true,
+        nav: false,
+        margin: 50,
+      },
+      820:{
+        margin: 150,
+        items: 5,
+        navContainerClass: 'stage-nav'
+      },
+  }
+  });
+
   // resizebale init
   $(".resizable").simplebox();
+
+  // instafeed init
+  var feed = new Instafeed({
+    get: 'tagged',
+    tagName: 'awesome',
+    clientId: 'YOUR_CLIENT_ID'
+});
+feed.run();
 });
 
   // burger setup
@@ -211,3 +242,4 @@ $(function() {
     }
   });
 });
+
