@@ -10,7 +10,11 @@
   }
 
   &__img {
-    height: 230px;
-    width: 100px;
+    
+
+    &-wrap {
+      height: 170px;
+      width: 150px;
+    }
   }
 }

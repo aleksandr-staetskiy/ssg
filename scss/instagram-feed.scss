@@ -1,0 +1,23 @@
+.instagram-feed {
+
+  &__title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: $title-color;
+    font-size: 32px;
+  }
+  &__plazhka {
+    margin-top: -45px;
+    margin-left: 5px;
+    width: 210px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    z-index: 9999999;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+  }
+}
