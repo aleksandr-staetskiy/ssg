@@ -24,7 +24,6 @@ $(document).ready(function(){
     lazyLoad: true,
     autoplay: true,
     autoplayTimeout: 6000,
-    autoHeight:true,
     navContainerClass: 'promo-nav',
     // dotsClass: 'discount-panel',
     // dotClass: 'discount-btn',
@@ -104,7 +103,7 @@ $(document).ready(function(){
     navContainerClass: 'stage-nav',
     responsive:{
       320:{
-        items: 1,
+        items: 2,
       },
       820:{
         items: 4,
