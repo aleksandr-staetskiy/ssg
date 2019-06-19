@@ -33,25 +33,6 @@ a:hover {
   color: #f2f2f2
 }
 
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
-}
-
-.logo__icon {
-  width: 100px;
-  height: 60px
-}
-
-.logo__info {
-  font-size: 14px;
-  margin: 0;
-  margin-left: 15px
-}
 
 .promo-nav .owl-prev {
   position: absolute;
@@ -1774,6 +1755,134 @@ body .modal-backdrop {
 .main-navbar__item {
   margin-top: 10px;
   margin-left: 15px
+}
+
+.main-navbar__link {
+  text-transform: uppercase
+}
+
+@media (max-width: 994px) {
+  .main-navbar {
+    display: none
+  }
+}
+
+
+.logo {
+  position: absolute;
+  left: 10%;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.logo__icon {
+  width: 160px;
+  height: 100px
+}
+
+.logo__info {
+  font-size: 16px;
+  margin: 0;
+  margin-left: 15px
+}
+
+@media (max-width: 778px) {
+  .logo {
+    display: none
+  }
+
+  .logo__icon {
+    width: 90px;
+    height: 70px
+  }
+}
+
+.header {
+  background: #005eb5;
+  padding-bottom: 10px
+}
+
+.header__contacts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-top: 10px
+}
+
+.header__email {
+  margin-left: 25px;
+  font-size: 16px
+}
+
+.header__phone {
+  white-space: nowrap;
+  margin-left: 25px;
+  font-size: 16px
+}
+
+.header__menu {
+  margin-top: 7px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.header__btn {
+  font-size: 16px;
+  height: auto;
+  border-radius: 20px;
+  background: #005eb5;
+  color: #fff;
+  padding: 10px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  border: 1px solid #fff
+}
+
+.header__btn:hover {
+  background: #fff;
+  color: #005eb5
+}
+
+@media (max-width: 778px) {
+  .header__contacts {
+    display: none
+  }
+
+  .header__menu {
+    display: none
+  }
+}
+
+.main-navbar {
+  margin-right: 40px
+}
+
+.main-navbar__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+
+.main-navbar__item {
+  margin-top: 10px;
+  margin-left: 35px
 }
 
 .main-navbar__link {
