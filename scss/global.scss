@@ -320,5 +320,19 @@ mark.current {
     color: #FFFFFF;
   }
 
+  .close span {
+    display: block!important;
+    margin-left: -10px!important;
+    font-size: 40px;
+    color: #FFFFFF;
+  }
 
-  
+  .center {
+    max-width: 35%;
+
+    @media(max-width: 480px) {
+      &{
+        max-width: 90%;
+      }
+    }
+  }

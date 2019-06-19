@@ -18,3 +18,9 @@
     }
   }
 }
+
+textarea {
+  &::placeholder {
+    color: #fff;
+  }
+}

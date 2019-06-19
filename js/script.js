@@ -16,6 +16,38 @@ $(document).ready(function(){
   }
   });
 
+  // logic for discount switcher
+  $('.b3 .right-flex .item').on('click', function(e){
+		if ($(this).hasClass('active')) {
+			e.preventDefault();
+		}
+		else {
+			$('.b3 .right-flex .item').removeClass('active');
+			$(this).addClass('active');
+			$('.b3 .gradient .row .left .left-title').text($(this).attr('data-name'));
+			$('.b3 .gradient .row .left .after-title').text($(this).attr('data-text'));
+			$('.b3 .gradient .row .left .text-content').html($(this).attr('data-content'));
+			var new_bg = document.location.origin + '/img/akcia/' + $(this).attr("data-bg") + '.jpg';
+			$('.b3').css('background-image', 'url(' + new_bg + ')');
+			$('.b3 .gradient .row .left .white').text($(this).attr('data-old'));
+	        $('.b3 .gradient .row .left .yellow').text($(this).attr('data-new'));
+		}
+	});
+	$('.b3 .select-block .select .title .arrow').on('click', function(){
+	   $(this).closest('.select').toggleClass('active');
+	});
+	$('.b3 .select-block .select .list .list-item').on('click', function(){
+	   $(this).closest('.select').toggleClass('active');
+	   $(this).closest('.select').find('.name').text($(this).text());
+	   $('.b3 .gradient .row .left .left-title').text($(this).attr('data-name'));
+	   $('.b3 .gradient .row .left .after-title').text($(this).attr('data-text'));
+	   $('.b3 .gradient .row .left .text-content').html($(this).attr('data-content'));
+	   var new_bg = document.location.origin + '/img/akcia/' + $(this).attr("data-bg") + '.jpg';
+	   $('.b3').css('background-image', 'url(' + new_bg + ')');
+	   $('.b3 .gradient .row .left .white').text($(this).attr('data-old'));
+	   $('.b3 .gradient .row .left .yellow').text($(this).attr('data-new'));
+	});
+
   $("#discount-slider").owlCarousel({
     items: 1,
     loop: true,
@@ -25,8 +57,6 @@ $(document).ready(function(){
     autoplay: true,
     autoplayTimeout: 6000,
     navContainerClass: 'promo-nav',
-    // dotsClass: 'discount-panel',
-    // dotClass: 'discount-btn',
   });
 
   $("#stage-slider").owlCarousel({

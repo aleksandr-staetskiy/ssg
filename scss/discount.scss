@@ -1,5 +1,269 @@
-.discount {
+.b3 .gradient {
+  padding: 50px 0;
+  padding-bottom: 0;
+  /*
+  background: linear-gradient(-90.69deg, rgba(0, 94, 181, 0.0001) 40.49%, #005eb5 80.23%);
+  */
+  /*
+		transform: matrix(-1, 0, 0, 1, 0, 0);
+		*/
 
+}
+
+.b3 {
+  background-image: url("http://127.0.0.1:5501/img/akcia/2.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 800px;
+}
+.b3 .gradient .row .left {
+  width: 425px;
+  max-width: 100%;
+  min-height: 750px;
+}
+.b3 .gradient .row .left .left-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 0 35px;
+  /*min-height: 106px;*/
+}
+.b3 .gradient .row .left .after-title {
+  font-size: 27px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin: 0 0 25px;
+}
+.b3 .gradient .row .left .prices {
+  display: flex;
+  width: 350px;
+  max-width: 100%;
+}
+.b3 .gradient .row .left .prices .white {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: auto 25px auto 0;
+  width: 125px;
+  text-decoration: line-through;
+}
+.b3 .gradient .row .left .prices .yellow {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: auto 0;
+  width: calc(100% - 150px);
+  height: 55px;
+  background-color: #ffb600;
+  text-align: center;
+}
+.b3 .gradient .row .left .text-content {
+    margin: 25px 0 0;
+}
+.b3 .gradient .row .left .text-content p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 20px 0 0;
+}
+.b3 .gradient .row .left .text-content p b {
+    font-weight: bold;
+}
+.b3 .gradient .row .left .modal-btn {
+  width: 250px;
+  height: 70px;
+  border: 1px solid #ffb600;
+  background-color: #ffb600;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 30px 0;
+  transition: .2s;
+  cursor: pointer;
+}
+.b3 .gradient .row .left .modal-btn:hover {
+  background-color: #ffffff;
+  color: #ffb600;
+}
+.b3 .gradient .row .left .after-button {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  max-width: 280px;
+}
+.b3 .gradient .row .right {
+  width: calc(100% - 425px);
+  max-width: 100%;
+  margin-top: 0px;
+}
+.b3 .gradient .row .right .right-title {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  /*color: #ffb600;*/
+  text-shadow: 0px 0px 2px rgba(0, 32, 100, 0.8);
+  margin: 0;
+  text-align: right;
+}
+.b3 .gradient .row .right .right-flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 605px;
+  max-width: 100%;
+  justify-content: space-between;
+  margin: auto 0 0 auto;
+}
+.b3 .gradient .row .right .right-flex .item {
+  padding: 35px 25px;
+  width: 290px;
+  margin: 30px 0 0;
+  background-color: #005eb5;
+  transition: .2s;
+  cursor: pointer;
+}
+.b3 .gradient .row .right .right-flex .item .text-block {
+  height: 95px;
+  width: 100%;
+}
+.b3 .gradient .row .right .right-flex .item .text-block .item-title {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 0 10px;
+}
+.b3 .gradient .row .right .right-flex .item .text-block .item-text {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.b3 .gradient .row .right .right-flex .item .prices {
+  display: flex;
+}
+.b3 .gradient .row .right .right-flex .item .prices .left-price {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: auto 25px auto 0;
+  text-decoration: line-through;
+}
+.b3 .gradient .row .right .right-flex .item .prices .right-price {
+  border: 3px solid #FFFFFF;
+  width: 98px;
+  height: 37px;
+  text-align: center;
+  margin: auto 0;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #005eb5;
+}
+.b3 .gradient .row .right .right-flex .item.active {
+  background-color: #202f4f;
+}
+.b3 .gradient .row .right .right-flex .item.active .prices .right-price {
+  border-color: #005eb5;
+}
+.b3 .select-block {
+    display: none;
+    width: 100%;
+    margin: 0 0 30px;
+}
+.b3 .select-block .select {
+    width: 288px;
+    height: 47px;
+    position: relative;
+}
+.b3 .select-block .select .title {
+    display: flex;
+}  
+.b3 .select-block .select .title .arrow {
+    width: 47px;
+    height: 47px;
+    background-color: #ffb600;
+    padding: 12px 0 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.b3 .select-block .select .title .name {
+    width: calc(100% - 47px);
+    padding: 10px 17px 13px;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 24px;
+    color: #202F4F;
+    background-color: #ffffff;
+}
+.b3 .select-block .select .title .arrow .fa {
+    font-size: 24px;
+    color: #ffffff;
+}
+.b3 .select-block .select.active .title .arrow .fa {
+    transform: rotate(180deg);
+}
+.b3 .select-block .select .list {
+    top: 47px;
+    left:0;
+    position: absolute;
+    width: 288px;
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+.b3 .select-block .select .list .list-item {
+    padding: 10px 17px 13px;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 24px;
+    color: #202F4F;
+    background-color: #ffffff;
+}
+.b3 .select-block .select .list .list-item+.list-item {
+    border: none;
+}
+.b3 .select-block .select.active .list .list-item+.list-item {
+    border-top: 1px solid #ffb600;
+}
+.b3 .select-block .select.active .list {
+    height: auto;
+}
+
+
+@media (max-width: 1200px) {
+  .b3 .gradient .row .right .right-flex .item {
+    padding: 35px 25px;
+    width: 250px;
+    margin: 30px 0 0;
+    background-color: #005eb5;
+    transition: .2s;
+    cursor: pointer;
+  }
+  
+}
+
+
+
+.discount {
+  display: none;
 
   &__item {
 
@@ -59,16 +323,15 @@
     
   }
 
-  // &-panel {
-  //   position: absolute;
-  //   right: 15%;
-  //   top: 30%;
-  //   width: 380px;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
-
-  // &-btn {
-  //   width: 50%;
-  // }
 }
+
+@media (max-width: 720px) {
+  .b3-mobile-hidden {
+    display: none;
+  }
+
+  .discount {
+    display: block;
+  }
+
+} 

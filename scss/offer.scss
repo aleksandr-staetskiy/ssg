@@ -31,8 +31,7 @@
   }
 
   &__hidden {
-    display: flex;
-    visibility: hidden;
+  display: none;
   }
 
   &__button {
@@ -60,7 +59,7 @@
       box-shadow: 0px 0px 22px rgba(0, 94, 181, 0.127604);
     }
     &:hover .offer__hidden {
-      visibility: visible;
+      display: flex;
     }
   }
 
@@ -81,5 +80,188 @@
       padding: 0;
     }
   }
+}
+
+.b2 {
+  padding: 0 0 130px;
+}
+.b2 .title-block {
+  width: 50%;
+  margin: 50px 0 0;
+}
+.b2 .title-block h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #202f4f;
+  margin: 0 0 0px;
+}
+.b2 .title-block h3 {
+  font-size: 27px;
+  line-height: 32px;
+  color: #005eb5;
+  margin: 0;
+}
+.b2 .services {
+  width: 50%;
+  display: flex;
+  margin: 50px 0 0;
+  justify-content: flex-start;
+}
+.b2 .services .item {
+  max-width: 100%;
+  width: 285px;
+  margin: 0 15px 0 0;
+  position: relative;
+  z-index: 5;
+  height: 77px;
+}
+.b2 .services .item .info {
+  display: flex;
+  max-width: 315px;
+  height: 77px;
+  width: 100%;
+  justify-content: flex-start;
+}
+.b2 .services .item .info img {
+  margin: auto 15px auto 0;
+}
+.b2 .services .item .info p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #001236;
+  margin: auto 0;
+}
+.b2 .services .item:hover {
+  z-index: auto;
+}
+.b2 .services .item:hover .item-in {
+  opacity: 1;
+}
+.b2 .services .item .item-in {
+  position: absolute;
+  top: -21px;
+  left: -21px;
+  padding: 20px;
+  /*
+				border: 1px solid #000000;
+				*/
+
+  box-shadow: 0px 0px 22px rgba(0, 94, 181, 0.127604);
+  z-index: 20;
+  background-color: #ffffff;
+  width: 368px;
+  height: 193px;
+  transition: .2s;
+  opacity: 0;
+}
+.b2 .services .item .item-in .order {
+  width: 100%;
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+}
+.b2 .services .item .item-in .order .modal-solid {
+  width: 168px;
+  height: 41px;
+  border-radius: 21.5px;
+  border: 1px solid #005eb5;
+  background-color: #005eb5;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: .2s;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+.b2 .services .item .item-in .order .modal-solid:hover {
+  color: #005eb5;
+  background-color: #ffffff;
+}
+.b2 .services .item .item-in .order .modal-dashed {
+  width: 132px;
+  height: 41px;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  border-bottom: 2px dashed #005eb5;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #005eb5;
+  letter-spacing: 0.3px;
+  transition: .2s;
+  margin: 0;
+  cursor: pointer;
+}
+.b2 .services .item .item-in .order .modal-dashed:hover {
+  border-color: #ffffff;
+}
+.b2 .services .item-1 img {
+  width: 67px;
+}
+.b2 .services .item-2 img {
+  width: 74px;
+}
+.b2 .services .item-3 img {
+  width: 71px;
+}
+.b2 .services .item-4 img {
+  width: 75px;
+}
+.b2 .services .item-5 img {
+  width: 71px;
+}
+.b2 .services .item-6 img {
+  width: 51px;
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+  .b2 .services .item .item-in {width: 340px;}
+  .b2 .services .item .item-in .order .modal-dashed {font-size: 14px;}
+ 
+}
+@media screen and (max-width: 812px) {
+  
+  .b2 .title-block {width: 100%; text-align: center;}
+  .b2 .services {width: 100%; justify-content: space-between;}
+
+}
+@media screen and (max-width: 767px) {
+  .b2 .services {
+      flex-wrap: wrap;
+      margin: 0;
+  }
+  .b2 .services .item {
+      margin: 30px 0 0;
+  }
+  
+  
+}
+@media screen and (max-width: 480px) {
+ 
+  .b2 .services .item {width: 100%;}
+  .b2 .services .item .item-in {display: none !important;}
+  .b2 .services .item .info {justify-content: space-between;}
+  .b2 .services .item .info p {width: 220px;}
+}
+@media screen and (max-width: 375px) {
+  .b2 .services .item .info p {width: 200px;}
+  .b2 .title-block h2 {font-size: 28px;}
+  .b2 .title-block h3 {font-size: 25px;}
+  .b2 .services {margin-left: 15px;}
 }
 
