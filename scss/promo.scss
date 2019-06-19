@@ -1,19 +1,23 @@
 .promo {
   &__item {
 
+
     &--bg-1 {
-      background: linear-gradient(to right, rgba(228, 232, 230, 0.4), rgba(14, 80, 137, 0.961)), url(../img/promo-bg-1-compressor.jpeg)no-repeat;
+      background: linear-gradient(86.04deg, rgba(0, 94, 181, 0.0001) 23.49%, #005eb5 87.23%), url(../img/slide-1.jpg)no-repeat;
       background-size: cover;
+      background-position: center;
     }
 
     &--bg-2 {
-      background: linear-gradient(to right, rgba(228, 232, 230, 0.4), rgba(14, 80, 137, 0.961)), url(../img/promo-bg-2.jpeg)no-repeat;
+      background: linear-gradient(86.04deg, rgba(0, 94, 181, 0.0001) 23.49%, #005eb5 87.23%), url(../img/slide-2.jpg)no-repeat;
       background-size: cover;
+      background-position: center;
     }
 
     &--bg-3 {
-      background: linear-gradient(to right, rgba(228, 232, 230, 0.4), rgba(14, 80, 137, 0.961)), url(../img/promo-bg-3.jpg)no-repeat;
+      background: linear-gradient(86.04deg, rgba(0, 94, 181, 0.0001) 23.49%, #005eb5 87.23%), url(../img/slide-3.jpg)no-repeat;
       background-size: cover;
+      background-position: center;
     }
   }
 

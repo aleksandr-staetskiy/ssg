@@ -1,5 +1,6 @@
 .header {
   background: $color-primary;
+  padding-bottom: 10px;
 
   &__contacts {
     width: 100%;
@@ -10,23 +11,25 @@
 
   &__email {
     margin-left: 25px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   &__phone {
+    white-space: nowrap;
     margin-left: 25px;
-    font-size: 18px;
+    font-size: 16px;
   }
   
   &__menu {
+    margin-top: 7px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
   }
 
   &__btn {
-    font-size: 14px;
+    font-size: 16px;
     height: auto;
     border-radius: 20px;
     background: $color-primary;
