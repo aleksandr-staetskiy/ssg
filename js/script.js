@@ -27,7 +27,7 @@ $(document).ready(function(){
 			$('.b3 .gradient .row .left .left-title').text($(this).attr('data-name'));
 			$('.b3 .gradient .row .left .after-title').text($(this).attr('data-text'));
 			$('.b3 .gradient .row .left .text-content').html($(this).attr('data-content'));
-			var new_bg = '../img/akcia/' + $(this).attr("data-bg") + '.jpg';
+			var new_bg = './img/akcia/' + $(this).attr("data-bg") + '.jpg';
 			$('.b3').css('background-image', 'url(' + new_bg + ')');
 			$('.b3 .gradient .row .left .white').text($(this).attr('data-old'));
 	        $('.b3 .gradient .row .left .yellow').text($(this).attr('data-new'));
@@ -42,7 +42,7 @@ $(document).ready(function(){
 	   $('.b3 .gradient .row .left .left-title').text($(this).attr('data-name'));
 	   $('.b3 .gradient .row .left .after-title').text($(this).attr('data-text'));
 	   $('.b3 .gradient .row .left .text-content').html($(this).attr('data-content'));
-	   var new_bg = '../img/akcia/' + $(this).attr("data-bg") + '.jpg';
+	   var new_bg = './img/akcia/' + $(this).attr("data-bg") + '.jpg';
 	   $('.b3').css('background-image', 'url(' + new_bg + ')');
 	   $('.b3 .gradient .row .left .white').text($(this).attr('data-old'));
 	   $('.b3 .gradient .row .left .yellow').text($(this).attr('data-new'));
