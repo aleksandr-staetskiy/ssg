@@ -272,3 +272,64 @@ $(function() {
   });
 });
 
+
+ymaps.ready(init);
+    function init(){ 
+      //   // Создание карты.    
+      //   var myMap = new ymaps.Map("map", {
+      //       // Координаты центра карты.
+      //       // Порядок по умолчанию: «широта, долгота».
+      //       // Чтобы не определять координаты центра карты вручную,
+      //       // воспользуйтесь инструментом Определение координат.
+      //       center: [59.95409813, 30.29329758],
+      //       // Уровень масштабирования. Допустимые значения:
+      //       // от 0 (весь мир) до 19.
+      //       zoom: 13,
+      //       behaviors: ['drag']
+            
+      //   });
+
+      //   // var placemark = new ymaps.Placemark( [55.75399400, 37.62209300], {
+      //   //   balloonContent: 'evtrr'
+      //   // });
+
+      //   // map.geoObjects.add(placemark);
+
+      //   var myGeoObject = new ymaps.GeoObject({
+      //     geometry: {
+      //         type: "Point", // тип геометрии - точка
+      //         coordinates: [55.75399400, 37.62209300] // координаты точки
+      //     }
+      // });
+
+      var myMap = new ymaps.Map("map", {
+        center: [59.95432075, 30.28974095],
+        zoom: 12,
+        behaviors: ['drag']
+    });
+    // Создание геообъекта с типом точка (метка).
+    var myGeoObject = new ymaps.GeoObject({
+        geometry: {
+            type: "Point", // тип геометрии - точка
+            coordinates: [59.95414856, 30.29351750] // координаты точки
+        },
+        hintContent: 'Собственный значок метки',
+      balloonContent: 'Это красивая метка'
+  }, {
+      // Опции.
+      // Необходимо указать данный тип макета.
+      iconLayout: 'default#image',
+      // Своё изображение иконки метки.
+      iconImageHref: '../img/map_metka.png',
+      iconImageSize: [40, 60],
+      // Смещение левого верхнего угла иконки относительно
+      // её "ножки" (точки привязки).
+      // iconImageOffset: [-5, -38]
+        
+    });
+    
+    // Размещение геообъекта на карте.
+    myMap.geoObjects.add(myGeoObject); 
+    }
+
+
