@@ -137,7 +137,7 @@ $(document).ready(function(){
     nav: true,
     autoplay: true,
     autoplayTimeout: 9000,
-    navContainerClass: 'stage-nav',
+    navContainerClass: 'certificates-nav',
     responsive:{
       320:{
         items: 1,
