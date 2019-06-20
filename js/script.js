@@ -62,10 +62,17 @@ $(document).ready(function(){
   $("#stage-slider").owlCarousel({
     items: 1,
     loop: true,
-    nav: true,
     autoplay: true,
     autoplayTimeout: 6000,
-    navContainerClass: 'stage-nav',
+    responsive:{
+      320:{
+        nav: false,
+      },
+      620:{
+        nav: true,
+        navContainerClass: 'stage-nav',
+      },
+  }
   });
 
   $("#resources-slider").owlCarousel({
@@ -92,12 +99,12 @@ $(document).ready(function(){
     items: 4,
     loop: true,
     nav: true,
-    autoplay: true,
+    // autoplay: true,
     autoplayTimeout: 6000,
     navContainerClass: 'stage-nav',
     responsive:{
-      320:{
-        items: 2,
+      320:{ 
+        items: 1,  
       },
       820:{
         items: 4,
@@ -133,7 +140,7 @@ $(document).ready(function(){
     navContainerClass: 'stage-nav',
     responsive:{
       320:{
-        items: 2,
+        items: 1,
       },
       820:{
         items: 4,
