@@ -154,18 +154,17 @@ $(document).ready(function(){
     nav: true,
     autoplay: true,
     autoplayTimeout: 7000,
-    navContainerClass: 'stage-nav',
+    navContainerClass: 'partners-nav',
     responsive:{
       320:{
-        items: 3,
-        center: true,
+        items: 1,
         nav: false,
         margin: 50,
       },
       820:{
         margin: 150,
         items: 5,
-        navContainerClass: 'stage-nav'
+        // navContainerClass: 'stage-nav'
       },
   }
   });

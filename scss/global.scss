@@ -123,6 +123,30 @@ a {
   }
 }
 
+.partners-nav {
+
+  .owl-prev {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    border: none;
+    font-size: 70px;
+    background: none;
+    color: rgba(0, 94, 181, 0.393);
+  }
+
+  .owl-next {
+    position: absolute;
+    top: 0;
+    right: -5%;
+    border: none;
+    font-size: 70px;
+    background: none;
+    color: rgba(0, 94, 181, 0.393);
+  }
+}
+
+
 .circle-check {
   display: inline-block;
   width: 20px;
