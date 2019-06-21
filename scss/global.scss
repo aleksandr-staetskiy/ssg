@@ -387,3 +387,25 @@ mark.current {
   .app-wrapper {
     overflow-x: hidden;
   }
+
+  .page-search {
+    
+    &__input {
+     border: none;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 16px;
+    background: #ffffff;
+
+    &::placeholder {
+      color: #244358;
+    }
+    }
+
+    &__button {
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+      background: $color-secondary;
+    }
+  }
