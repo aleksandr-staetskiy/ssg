@@ -1,10 +1,13 @@
 .instagram-feed {
 
   &__title {
-    margin-top: 60px;
-    margin-bottom: -55px;
-    width: 145px;
-    height: 100px;
+    color: $title-color;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: -30px;
   }
   &__plazhka {
     margin-top: -45px;

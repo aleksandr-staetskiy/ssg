@@ -1,5 +1,6 @@
 $(document).ready(function(){
   $("#promo-slider").owlCarousel({
+    autoplayHoverPause: true,
     items: 1,
     loop: true,
     nav: true,
@@ -60,6 +61,7 @@ $(document).ready(function(){
   });
 
   $("#stage-slider").owlCarousel({
+    autoplayHoverPause: true,
     items: 1,
     loop: true,
     autoplay: true,
@@ -330,5 +332,32 @@ ymaps.ready(init);
     // Размещение геообъекта на карте.
     myMap.geoObjects.add(myGeoObject); 
     }
+
+    // button to top
+
+    //   button to top
+$(function () {
+
+  $(window).scroll(function () {
+
+      if ($(this).scrollTop() != 0) {
+
+          $('#toTop').fadeIn();
+
+      } else {
+
+          $('#toTop').fadeOut();
+
+      }
+
+  });
+
+  $('#toTop').click(function () {
+
+      $('body,html').animate({ scrollTop: 0 }, 800);
+
+  });
+
+});
 
 

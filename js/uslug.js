@@ -279,3 +279,28 @@ $(document).ready(function(){
 });
 /*
 $(function(){$('[data-toggle="tooltip"]').tooltip();$('[data-toggle="popover"]').popover();});*/
+
+    //   button to top
+	$(function () {
+
+		$(window).scroll(function () {
+	  
+			if ($(this).scrollTop() != 0) {
+	  
+				$('#toTop').fadeIn();
+	  
+			} else {
+	  
+				$('#toTop').fadeOut();
+	  
+			}
+	  
+		});
+	  
+		$('#toTop').click(function () {
+	  
+			$('body,html').animate({ scrollTop: 0 }, 800);
+	  
+		});
+	  
+	  });

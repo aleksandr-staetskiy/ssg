@@ -1770,7 +1770,7 @@ body .modal-backdrop {
 
 .logo {
   position: absolute;
-  left: 10%;
+  left: 5%; 
   top: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1787,7 +1787,8 @@ body .modal-backdrop {
 .logo__info {
   font-size: 16px;
   margin: 0;
-  margin-left: 15px
+  margin-left: 15px;
+  line-height: 19px;
 }
 
 @media (max-width: 778px) {
@@ -1894,3 +1895,35 @@ body .modal-backdrop {
     display: none
   }
 }
+
+#toTop {
+  width: 100px;
+  height: 65px;
+  width: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #005eb5;;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+  cursor: pointer;
+  display: none;
+  color: #e1e1e1;
+  font-size: 14px;
+  z-index: 99999;
+}
+
+ .toTop__text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%);
+ }
