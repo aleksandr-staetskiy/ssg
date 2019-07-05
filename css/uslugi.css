@@ -1927,3 +1927,33 @@ body .modal-backdrop {
    margin-right: -50%;
    transform: translate(-50%, -50%);
  }
+
+ .header__title {
+   font-size: 20px;
+   padding-top: 30px
+ }
+
+ @media (max-width: 778px) {
+   .header__contacts {
+     display: none
+   }
+
+   .header__menu {
+     display: none
+   }
+
+   .header__phone {
+     margin-left: 0;
+     font-size: 18px
+   }
+ }
+
+ .navbar-brand {
+   margin-right: 0
+ }
+
+ @media (max-width: 778px) {
+   .navbar {
+     margin-top: -15px
+   }
+ }

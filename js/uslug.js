@@ -212,47 +212,7 @@ $(document).ready(function(){
       	$(this).find('label').text(text);
       }
     });
-    $('.file-form').submit(function(event){
-        event.preventDefault();    
-        var formData = new FormData($(this)[0]);    
-        $.ajax({
-                type: "POST",
-                url: "/mail.php",
-                processData: false,
-                contentType: false,
-                data: formData
-            }).success(function() {
-                $('#order-modal .close').click();
-                $('.open-tnx').click();
-            });
-    });
-    $('.question-form').submit(function(event){
-        event.preventDefault();    
-        var formData = new FormData($(this)[0]);    
-        $.ajax({
-                type: "POST",
-                url: "/mail-2.php",
-                processData: false,
-                contentType: false,
-                data: formData
-            }).success(function() {
-                
-                $('.open-tnx').click();
-            });
-    });
-    $('.price-form').submit(function(event){
-        event.preventDefault();    
-        var formData = new FormData($(this)[0]);    
-        $.ajax({
-                type: "POST",
-                url: "/mail-3.php",
-                processData: false,
-                contentType: false,
-                data: formData
-            }).success(function() {
-                $('.open-tnx').click();
-            });
-    });
+ 
     $(".phone").mask("+9 (999) 999-99-99");
     for (var suka =  15; suka < 40; suka++) {
         $('.b15 .clients-items div:nth-child('+suka+')').css('display', 'none');
