@@ -451,3 +451,30 @@ mark.current {
    margin-right: -50%;
    transform: translate(-50%, -50%);
  }
+
+ .bd-example-modal-lg {
+   z-index: 999999;
+ }
+
+ .about-title {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #202f4f;
+  margin: 40px 0 60px;
+ }
+
+ 
+ .about-descr {
+  color: #001236;
+  font-size: 18px;
+ }
+
+ .about-link {
+  color: $color-primary;
+ }
+
+ .fz-18 {
+  font-size: 18px!important;
+ }

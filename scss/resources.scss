@@ -63,6 +63,11 @@
     &__avatar {
       margin: 17px -25px;
       width: 200px!important;
+
+      &--different-size {
+        margin: 17px -15px;
+        width: 175px!important;
+      }
     }
   }
 

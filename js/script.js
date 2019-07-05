@@ -54,7 +54,6 @@ $(document).ready(function(){
     loop: true,
     nav: true,
     dots: false,
-    lazyLoad: true,
     autoplay: true,
     autoplayTimeout: 6000,
     navContainerClass: 'promo-nav',
@@ -81,6 +80,7 @@ $(document).ready(function(){
     items: 4,
     loop: true,
     nav: true,
+    lazyLoad: true,
     autoplay: true,
     autoplayTimeout: 6000,
     navContainerClass: 'stage-nav',
@@ -101,6 +101,7 @@ $(document).ready(function(){
     items: 4,
     loop: true,
     nav: true,
+    lazyLoad: true,
     // autoplay: true,
     autoplayTimeout: 6000,
     navContainerClass: 'stage-nav',
@@ -137,6 +138,7 @@ $(document).ready(function(){
     items: 4 ,
     loop: true,
     nav: true,
+    lazyLoad: true,
     autoplay: true,
     autoplayTimeout: 9000,
     navContainerClass: 'certificates-nav',
@@ -154,6 +156,7 @@ $(document).ready(function(){
     items: 4,
     loop: true,
     nav: true,
+    lazyLoad: true,
     autoplay: true,
     autoplayTimeout: 7000,
     navContainerClass: 'partners-nav',
@@ -170,6 +173,24 @@ $(document).ready(function(){
       },
   }
   });
+
+  //E-mail Ajax Send
+	$("#form-modal").submit(function() { 
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", 
+			data: th.serialize()
+		}).done(function() {
+			alert("Спасибо, Ваша заявка отправлена");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+  });
+  
 
   // resizebale init
   $(".resizable").simplebox();

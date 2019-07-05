@@ -17,11 +17,15 @@
 
   @media (max-width: 420px) {
 
-    &__title {
-      font-size: 31px;
-      padding-top: 100px;
+    &{
+      background: url(../img/b-11-mob.jpg)no-repeat;
+      background-size: cover;
+  background-position: top center;
     }
 
-    
+    &__title {
+      font-size: 28px;
+    }
+
   }
 }
