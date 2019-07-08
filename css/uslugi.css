@@ -1956,4 +1956,8 @@ body .modal-backdrop {
    .navbar {
      margin-top: -15px
    }
+
+   .navbar__wrapper {
+    text-align: center;
+  }
  }

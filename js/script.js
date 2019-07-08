@@ -382,3 +382,23 @@ $(function () {
 });
 
 
+// Отправка заявки 
+$(document).ready(function() {
+	$('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+		if (document.form.name.value == '' || document.form.phone.value == '' ) {
+			valid = false;
+			return valid;
+		}
+		$.ajax({
+			type: "POST",
+			url: "basic-mailer.php",
+			data: $(this).serialize()
+		}).done(function() {
+			alert('Спасибо, Ваша заявка отправлена');
+			$(this).find('input').val('');
+			$('#form').trigger('reset');
+		});
+		return false;
+	});
+});
+
